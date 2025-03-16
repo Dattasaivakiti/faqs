@@ -20,11 +20,13 @@ body {
   min-width: 500px;
   height: auto;
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -40%);
   background-color: white;
   border-radius: 15px;
+  padding-top: 30px;
+  padding-bottom: 20px;
 }
 .mini {
   display: flex;
@@ -82,7 +84,7 @@ hr {
   opacity: 0.1;
 }
 .hide {
-  display: none;
+  visibility: hidden;
 }
 .body .answer {
   display: none;
@@ -92,4 +94,7 @@ section:hover {
 }
 .questions img:nth-of-type(2) {
   display: none;
+}
+.questions img:nth-of-type(2).display {
+  display: inline;
 }
